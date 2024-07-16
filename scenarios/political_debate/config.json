@@ -1,0 +1,84 @@
+{
+  "servers": {
+    "llm": "http://127.0.0.1:11434/v1",
+    "api": "http://localhost:5010/"
+  },
+  "simulation": {
+    "days": 30,
+    "slots": 24,
+    "starting_agents": 50,
+    "new_agents_iteration": 5,
+    "hourly_activity": {
+      "0": 0.20,
+      "1": 0.12,
+      "2": 0.08,
+      "3": 0.07,
+      "4": 0.06,
+      "5": 0.10,
+      "6": 0.15,
+      "7": 0.15,
+      "8": 0.18,
+      "9": 0.20,
+      "10": 0.21,
+      "11": 0.22,
+      "12": 0.30,
+      "13": 0.34,
+      "14": 0.23,
+      "15": 0.22,
+      "16": 0.22,
+      "17": 0.25,
+      "18": 0.28,
+      "19": 0.34,
+      "20": 0.30,
+      "21": 0.34,
+      "22": 0.30,
+      "23": 0.25
+    }
+  },
+  "agents": {
+    "education_levels": ["high school", "bachelor", "master", "phd"],
+    "languages": ["english"],
+    "max_length_thread_reading": 5,
+    "reading_from_follower_ratio": 0.6,
+    "political_leanings": [
+      "Democrat", "Republican", "Libertarian", "Green",
+      "Independent", "Alt-Right", "Alt-Left","Anarchist", "Centrist"
+      ],
+    "age": {
+        "min": 18,
+        "max": 80
+    },
+    "llm_agents": ["llama3"],
+    "n_interests": {
+        "min": 4,
+        "max": 10
+    },
+    "interests": [
+      "gun control", "immigration", "minorities discrimination", "economics", "safety", "healthcare", "taxes",
+      "crime", "abortion", "climate change", "culture", "national identity", "human rights", "LGBTQ+", "education issues",
+      "social issues", "death penalty", "drugs legislation", "corruption", "justice", "AI regulation", "sustainable energy",
+      "pollution control", "science funding", "private sector", "industry", "tourism", "welfare", "family support", "veteran affairs",
+      "elections", "religion", "law enforcement", "constitutional rights", "constitution", "war", "terrorism", "pace-keeping operations",
+      "nuclear weapons proliferation"
+    ],
+    "big_five": {
+      "oe": ["inventive/curious", "consistent/cautious"],
+      "co": ["efficient/organized", "extravagant/careless"],
+      "ex": ["outgoing/energetic", "solitary/reserved"],
+      "ag": ["friendly/compassionate", "critical/judgmental"],
+      "ne": ["sensitive/nervous", "resilient/confident"]
+    }
+  },
+  "posts": {
+    "visibility_rounds": 36,
+    "emotions": {
+      "admiration": null, "amusement": null, "anger": null, "annoyance": null,
+      "approval": null, "caring": null, "confusion": null, "curiosity": null,
+      "desire": null, "disappointment": null, "disapproval": null, "disgust": null,
+      "embarrassment": null, "excitement": null, "fear": null, "gratitude": null,
+      "grief": null, "joy": null, "love": null, "nervousness": null, "optimism": null,
+      "pride": null, "realization": null, "relief": null, "remorse": null, "sadness": null,
+      "surprise": null, "trust": null
+    }
+  }
+}
